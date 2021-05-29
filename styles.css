@@ -9,7 +9,7 @@ html {
 }
 body {
     margin: 0;
-    background: #dedede;
+    background: #d6d3d3;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -23,9 +23,9 @@ header{
   justify-content: center;
   align-items: center;
 }
-header p{
+header p, h1{
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 3vh;
 }
 
   .gameboard {
@@ -85,16 +85,57 @@ header p{
   }
 
   .btn-start {
-    width: 400px;
-    height: 100px;
+    width: 60vh;
+    height: 10vh;
     background: #ecf0f1;
     color: #2c3e50;
-    font-size: 2.5rem;
+    font-size: 4vh;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+    top: calc(50% - 5vh);
+    left: calc(50% - 30vh);
   }
 
   .hide {
     display: none;
+  }
+
+  @media screen and (min-width: 320px) {
+    header{
+      padding: 1rem;
+      width: 100vw;
+      height: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    header p, h1{
+      margin: 1rem;
+      font-size: 3vh;
+    }
+    .main-contain{
+      width: 100vw ;
+      margin: 5px;
+      margin-top: 45px;
+    }
+    .gameboard {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0;
+      max-height: 60vh;
+      max-width: 60vh;
+    }
+    .btn-start {
+      width: 300;
+      height: 30;
+      background: #ecf0f1;
+      color: #2c3e50;
+      font-size: 4vh;
+      position: absolute;
+      top: calc(50% - 22px);
+      left: calc(50% - 155px);
+    }
+  
   }
