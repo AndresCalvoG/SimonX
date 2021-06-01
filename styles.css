@@ -134,13 +134,13 @@ header p, h1{
       align-items: center;
     }
     .gameboard {
-      height: 300px;
-      width: 300px;
+      height: 93vw;
+      width: 93vw;
       border-radius: 50%;
       overflow: hidden;
       margin: 0;
-      max-height: 65vh;
-      max-width: 65vh;
+      max-height: 380px;
+      max-width: 380px;
     }
     .btn-start {
       width: 280px;
