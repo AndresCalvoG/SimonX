@@ -103,7 +103,11 @@ header p, h1{
     display: none;
   }
 
-  @media screen and (max-width: 430px) {
+  .footer{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 412px) {
     header{
       padding: 1rem;
       width: 100vw;
