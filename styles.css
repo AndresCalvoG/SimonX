@@ -21,12 +21,24 @@ body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 .board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: rgba(255,255,255,0.5);
+}
+.btn-log{
+  width: 15rem;
+  height: 5rem;
+  border-style: none;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
 }
 header{
   padding: 1rem;
