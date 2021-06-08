@@ -7,7 +7,7 @@ const tablero = documenr.getElementById('boards')
         .signInWithPopup(provider)
         .then((result) => {
           foto.setAttribute('src', result.user.photoURL);
-          swal(`Hola ${result.user.displayName}!`,'Bienvenido a SimonX','success').then(juego.inicializar())
+          swal(`Hola ${result.user.displayName}!`,'Bienvenido a SimonX','success')
           btnEmpezar.classList.remove('hide');
           tablero.classList.add('hide');
         //   /** @type {firebase.auth.OAuthCredential} */
