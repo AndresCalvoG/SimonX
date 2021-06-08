@@ -1,19 +1,13 @@
 const foto = document.getElementById('photo');
 const tablero = documenr.getElementById('boards')
 
-    if(btnEmpezar.classList.contains('hide')){
-        btnEmpezar.classList.remove('hide'); 
-    } else {
-        btnEmpezar.classList.add('hide'); 
-    }
-
     function authCuentaGoogle(){
       var provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth()
         .signInWithPopup(provider)
         .then((result) => {
           foto.setAttribute('src', result.user.photoURL);
-          swal(`Hola ${result.user.displayName}!`,'Bienvenido a SimonX','success')
+          swal(`Hola ${result.user.displayName}!`,'Bienvenido a SimonX','success').then(this.inicializar)
           btnEmpezar.classList.remove('hide');
           tablero.classList.add('hide');
         //   /** @type {firebase.auth.OAuthCredential} */
