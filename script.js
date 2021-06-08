@@ -2,9 +2,10 @@ const celeste = document.getElementById('celeste');
 const violeta = document.getElementById('violeta');
 const naranja = document.getElementById('naranja');
 const verde = document.getElementById('verde');
+const puntos = document.getElementById('puntos');
 const btnEmpezar = document.getElementById('btnEmpezar');
-const ULTIMO_NIVEL = 5;
-
+const ULTIMO_NIVEL = 50;
+let p = 0;
 
 class Juego {
   constructor() {
@@ -102,6 +103,7 @@ class Juego {
     this.iluminarColor(nombreColor);
     if(numeroColor === this.secuencia[this.subnivel]){
       this.subnivel++;
+      puntos.innerText = p += 1;
       if(this.subnivel === this.nivel){
         this.nivel++;
         this.eliminarEventosClick();
