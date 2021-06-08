@@ -1,4 +1,5 @@
 const foto = document.getElementById('photo');
+const tablero = documenr.getElementById('boards')
 
     if(btnEmpezar.classList.contains('hide')){
         btnEmpezar.classList.remove('hide'); 
@@ -11,10 +12,10 @@ const foto = document.getElementById('photo');
       firebase.auth()
         .signInWithPopup(provider)
         .then((result) => {
-          //foto.attr('src', result.user.photoURL);
+          foto.setAttribute('src', result.user.photoURL);
           swal(`Hola ${result.user.displayName}!`,'Bienvenido a SimonX','success')
           btnEmpezar.classList.remove('hide');
-          board.classList.add('hide');
+          tablero.classList.add('hide');
         //   /** @type {firebase.auth.OAuthCredential} */
         //   var credential = result.credential;
         //  // This gives you a Google Access Token. You can use it to access the Google API.
