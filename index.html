@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="board">
+      <button id="login" class="btn-log" onclick="authCuentaGoogle()">Google Loggin</button>
+    </div>
+
     <header>
       <h1>Puntos:</h1>
       <p id="puntos" class="puntos">0000</p>
+      <img src="" alt="avatar" srcset="" id="photo">
     </header>
     
     <main>
@@ -27,7 +32,19 @@
     <footer class="footer">
       <h2>SimonX create by Andres Calvo</h2>
     </footer>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="config.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <script src="script.js"></script>
+  <script src="auth.js"></script>
   </body>
 </html>
