@@ -49,6 +49,11 @@ header{
   justify-content: center;
   align-items: center;
 }
+.avatar{
+  border-radius: 50px;
+  width: 10rem;
+  height: 10rem;
+}
 header p, h1{
   margin: 1rem;
   font-size: 3vh;
