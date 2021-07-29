@@ -4,17 +4,23 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <title>SimonX</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
+
   <body>
     <div id="boards" class="board" >
-      <button id="login" class="btn-log" onclick="authCuentaGoogle()">Google LogIn</button>
+      <div class="boards--content">
+        <div class="boards--image" >
+          <img src="./src/assets/images/google.png" alt="Google" >
+        </div>
+        <button id="login" class="btn-log" onclick="authCuentaGoogle()">Sign up with Google</button>
+      </div>
     </div>
 
     <header>
       <h1>Puntos:</h1>
       <p id="puntos" class="puntos">0000</p>
-      <img src="https://e7.pngegg.com/pngimages/778/849/png-clipart-computer-icons-user-login-avatar-small-icons-angle-heroes.png" alt="avatar" id="photo" class="avatar">
+      <img id="photo" class="avatar" src="https://e7.pngegg.com/pngimages/778/849/png-clipart-computer-icons-user-login-avatar-small-icons-angle-heroes.png" alt="avatar" >
     </header>
     
     <main>
@@ -32,6 +38,7 @@
     <footer class="footer">
       <h2>SimonX create by Andres Calvo</h2>
     </footer>
+
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
 

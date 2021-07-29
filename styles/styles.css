@@ -31,14 +31,39 @@ body {
   left: 0px;
   background-color: rgba(255,255,255,0.5);
 }
-.btn-log{
-  width: 15rem;
-  height: 5rem;
+.boards--content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25rem;
+  height: 6rem;
+}
+.boards--image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
   border-style: none;
-  border-radius: 20px;
-  background-color: blue;
+  border-radius: 2px;
+  background-color: white;
+}
+.boards--image img{
+  width: 30px;
+  height: 30px;
+}
+.btn-log{
+  width: 25rem;
+  height: 6rem;
+  padding: 0.8rem;
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgb(66,133,244);
   color: white;
   font-size: 2rem;
+  text-align: end;
 }
 header{
   padding: 1rem;
